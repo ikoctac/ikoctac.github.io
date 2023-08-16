@@ -122,6 +122,18 @@ nav a {
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements vertically for mobile */
+    }
+  
+    .legendary-summary {
+      width: 100%; /* Full width on mobile */
+      margin: 0; /* Remove margins on mobile */
+    }
+  }
+  
+
 .summary-box {
     background-color: #999696;
     border-radius: 10px;
