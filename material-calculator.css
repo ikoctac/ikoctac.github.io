@@ -139,12 +139,12 @@ nav a {
 /*mobile view*/
 @media (max-width: 768px) {
     .summary-box {
-        width: 85%; /* Full width on mobile */
+        width: 100%; /* Full width on mobile */
         margin: 10px 0; /* Adjust margin for spacing */
         display: block;
     }
     .calculator {
-        width: 85%; /* Full width on mobile */
+        width: 100%; /* Full width on mobile */
         margin: 10px; /* Adjust margin for spacing */
         display: block;
     }
@@ -154,6 +154,13 @@ nav a {
         flex-direction: column; /* Change to column for mobile */
         justify-content: flex-start; /* Align to the top */
         align-items: center; /* Center horizontally */
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rarity-input input[type="number"] {
+        width: 50px; /* Adjust the width for better mobile visibility */
     }
 }
 
