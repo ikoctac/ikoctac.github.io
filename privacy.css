@@ -1,0 +1,129 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Add padding to the bottom */
+}
+
+/* Basic styles for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    bottom: 0;
+    padding: 10px 0;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1100px; /* Decrease the max-width to add space */
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #e0e0e0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Copyright text */
+footer p {
+    margin: 20px;
+    font-size: 12px;
+}
+
+/* Privacy Policy Section */
+.privacy-policy {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 40px; /* Add horizontal padding for more space from right and left */
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+    max-height: none; /* Set maximum height as 80% of viewport height */
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better contrast */
+}
+
+.privacy-policy h2 {
+    font-size: 24px; /* Adjust the font size */
+    margin-bottom: 20px; /* Increase the margin to create more separation */
+}
+
+.privacy-policy p {
+    font-size: 16px; /* Adjust the font size */
+    line-height: 1.8; /* Increase the line height for more spacing between lines */
+    margin-bottom: 20px; /* Increase the margin to create more separation */
+}
+
+
+
+

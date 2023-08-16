@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Calculator</title>
+    <link rel="stylesheet" type="text/css" href="material-calculator.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <h2>Material Calculator</h2>
+            <form id="material-form">
+                <label for="material-selection">Select Material:</label>
+                <select id="material-selection">
+                    <option value="leather">Leather</option>
+                    <option value="iron-ore">Iron Ore</option>
+                    <option value="boxes">Boxes</option>
+                    <option value="ebony">Ebony</option>
+                </select>
+                
+                <div class="rarity-input">
+                    <label for="normal"><img id="normal-img" src="" alt="Normal"> Normal:</label>
+                    <input type="number" id="normal">
+                </div>
+                <div class="rarity-input">
+                    <label for="advanced"><img id="advanced-img" src="" alt="Advanced"> Advanced:</label>
+                    <input type="number" id="advanced">
+                </div>
+                <div class="rarity-input">
+                    <label for="elite"><img id="elite-img" src="" alt="Elite"> Elite:</label>
+                    <input type="number" id="elite">
+                </div>
+                <div class="rarity-input">
+                    <label for="epic"><img id="epic-img" src="" alt="Epic"> Epic:</label>
+                    <input type="number" id="epic">
+                </div>
+                <div class="rarity-input">
+                    <label for="legendary"><img id="legendary-img" src="" alt="Legendary"> Legendary:</label>
+                    <input type="number" id="legendary">
+                </div>
+    
+                <button type="button" id="calculate-btn">Calculate</button>
+                <button type="button" id="clear-btn">Clear</button>
+
+            </form>
+           <!-- <div id="result" class="hidden">
+                <p>Your legendary materials are: <span id="calculated-amount">0</span></p>
+            </div> -->
+        </div>
+    <div class="summary-box">
+        <h2>Summary</h2>
+        <p>
+            <img src="Materials\Leather\LegendaryL.png" alt="Leather" class="material-icon">
+            Leather: <span id="leather-sum">0</span>
+        </p>
+        <p>
+            <img src="Materials\Iron-Ore\LegendaryI.png" alt="Iron Ore" class="material-icon">
+            Iron Ore: <span id="iron-ore-sum">0</span>
+        </p>
+        <p>
+            <img src="Materials\Boxes\LegendaryB.png" alt="Boxes" class="material-icon">
+            Boxes: <span id="boxes-sum">0</span>
+        </p>
+        <p>
+            <img src="Materials\Ebony\LegendaryE.png" alt="Ebony" class="material-icon">
+            Ebony: <span id="ebony-sum">0</span>
+        </p>
+        <hr>
+        <p>Total Legendary Sum: <span id="total-legendary-sum">0</span></p>
+    </div>
+    
+    </div>
+</div>
+    
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li> <!-- Link to Privacy Policy page -->
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2023 Kostakys Calculator. All rights reserved.</p>
+    </footer>
+</body>
+</html>

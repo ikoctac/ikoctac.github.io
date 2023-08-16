@@ -1,0 +1,313 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 20px; /* Add padding to the top */
+    padding-bottom: 20px; /* Add padding to the bottom */
+}
+
+/* Basic styles for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    bottom: 0;
+    padding: 10px 0;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.calculator {
+    background-color: #999696;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 20%; /* Half of the original width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    font-family: sans-serif;
+}
+
+.calculator h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#material-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    /*width: 150px; /* Adjust width for label alignment */
+}
+
+#material-selection,
+.rarity-input input {
+    width: auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+.rarity-input label {
+    width: auto;
+    margin-right: 10px;
+}
+
+#calculate-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#calculate-btn:hover {
+    background-color: #555;
+}
+
+#calculated-amount {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the sum of legendaries section */
+.legendary-summary {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Align the sum to the right */
+    width: 20%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    float: right;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Optional padding for spacing */
+}
+
+.legendary-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.summary-box {
+    background-color: #999696;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 25%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold; /* Making the text bold */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.summary-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.summary-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.summary-box hr {
+    margin: 15px 0;
+}
+.material-summary {
+    display: flex;
+    align-items: center;
+}
+
+.material-icon {
+    width: 50px;
+    height:50px ;
+    
+    margin-right: 10px;
+}
+.material-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.material-quantity {
+    font-size: 14px;
+}
+
+#clear-btn {
+    background-color: #ff0000; /* Red color */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#clear-btn:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
+
+#clear-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #e0e0e0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Copyright text */
+footer p {
+    margin: 0;
+    font-size: 12px;
+}
+/* Styling for the container of each rarity input */
+.rarity-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the label element */
+  .rarity-input label {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the rarity images */
+  .rarity-input img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  /* Optional: Styling for the input fields */
+  .rarity-input input[type="number"] {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Rearrange the icon and label using flex */
+  .rarity-input label {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Allow text to wrap */
+  .rarity-input label span {
+    flex-grow: 1;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  
+  
+  /* Optional: Styling for the input fields */
+  .rarity-input input[type="number"] {
+    width: 70px; /* Adjust the width as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Rearrange the icon and label using flex */
+  .rarity-input label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  /* Move the text to the right using margin-left */
+  .rarity-input label span {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  
+  
+  
+  
