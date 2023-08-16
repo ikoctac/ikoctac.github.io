@@ -127,11 +127,15 @@ nav a {
       flex-direction: column; /* Stack elements vertically for mobile */
     }
   
-    .legendary-summary {
+    .legendary-summary,
+    .summary-box {
       width: 100%; /* Full width on mobile */
       margin: 0; /* Remove margins on mobile */
     }
   }
+  
+
+  
   
 
 .summary-box {
