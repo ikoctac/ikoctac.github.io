@@ -11,6 +11,7 @@ body {
     background-attachment: fixed;
     padding-top: 20px; /* Add padding to the top */
     padding-bottom: 20px; /* Add padding to the bottom */
+    
 }
 
 /* Basic styles for the navigation bar */
@@ -121,20 +122,6 @@ nav a {
     font-size: 20px;
     margin-bottom: 10px;
 }
-
-@media (max-width: 568px) {
-    .container {
-      flex-direction: column; /* Stack elements vertically for mobile */
-    }
-  
-    .legendary-summary,
-    .summary-box {
-      width: 100%; /* Full width on mobile */
-      margin: 0; /* Remove margins on mobile */
-    }
-  }
-  
-
 .summary-box {
     background-color: #999696;
     border-radius: 10px;
@@ -147,6 +134,27 @@ nav a {
     font-family: sans-serif;
     font-weight: bold; /* Making the text bold */
     font-size: 16px; /* Adjust the font size as needed */
+}
+
+/*mobile view*/
+@media (max-width: 768px) {
+    .summary-box {
+        width: 85%; /* Full width on mobile */
+        margin: 10px 0; /* Adjust margin for spacing */
+        display: block;
+    }
+    .calculator {
+        width: 85%; /* Full width on mobile */
+        margin: 10px; /* Adjust margin for spacing */
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change to column for mobile */
+        justify-content: flex-start; /* Align to the top */
+        align-items: center; /* Center horizontally */
+    }
 }
 
 .summary-box h2 {
