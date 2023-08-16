@@ -122,7 +122,7 @@ nav a {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     .container {
       flex-direction: column; /* Stack elements vertically for mobile */
     }
@@ -133,9 +133,6 @@ nav a {
       margin: 0; /* Remove margins on mobile */
     }
   }
-  
-
-  
   
 
 .summary-box {
