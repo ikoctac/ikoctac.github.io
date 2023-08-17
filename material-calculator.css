@@ -15,14 +15,14 @@ body {
 }
 
 /* Basic styles for the navigation bar */
-nav {
-    background-color: #333;
-    color: #fff;
-    bottom: 0;
-    padding: 10px 0;
-    font-family: sans-serif;
-    width: 100%;
-}
+    nav {
+        background-color: #333;
+        color: #fff;
+        bottom: 0;
+        padding: 10px 0;
+        font-family: sans-serif;
+        width: 100%;
+    }
 
 nav ul {
     list-style-type: none;
