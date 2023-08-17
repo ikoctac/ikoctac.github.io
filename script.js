@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Restore input values
     rarityInputs.forEach(rarity => {
         const input = document.getElementById(rarity);
-        input.value = savedCalculatorData.materialQuantities[rarity] || 0;
+        input.value =  Math.floor(savedCalculatorData.materialQuantities[rarity]) || 0;
     });
 
     // Restore material quantities
@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         materialQuantities[material] = savedCalculatorData.materialQuantities[material] || 0;
     }
 
+    
     // Update the summary with restored data
     updateSummary(savedCalculatorData.calculatedValues);
 }
@@ -132,11 +133,10 @@ clearBtn.addEventListener("click", function() {
                                   materialQuantities['iron-ore'] +
                                   materialQuantities['boxes'] +
                                   materialQuantities['ebony'];
-        totalLegendarySumElement.textContent = totalLegendarySum;
-    
-
-
-
+        //remove for .decimals
+        const roundedTotalLegendarySum = Math.floor(totalLegendarySum);
+        totalLegendarySumElement.textContent = roundedTotalLegendarySum;
+    }
         // Display the calculated values for each rarity in the result section
        /* const calculatedAmountElement = document.getElementById("calculated-amount");
         const summaryItems = rarityInputs.map(rarity => {
@@ -147,7 +147,7 @@ clearBtn.addEventListener("click", function() {
         // Create a new line for each calculation
        // calculatedAmountElement.innerHTML = "Your legendary materials are: <br>" + summaryItems.join("<br>");
        // document.getElementById("result").classList.remove("hidden");
-    }
+    
 });
     
 
