@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //Change Photo based on the material selected
         function updateMaterialImages(selectedMaterial) {
             const newMaterialPrefix = selectedMaterial.charAt(0).toUpperCase();
-            normalImage.src = `../Materials/${selectedMaterial}/Normal${newMaterialPrefix}.png`;
+            normalImage.src = `./Materials/${selectedMaterial}/Normal${newMaterialPrefix}.png`;
             advancedImage.src = `Materials/${selectedMaterial}/Advanced${newMaterialPrefix}.png`;
             eliteImage.src = `Materials/${selectedMaterial}/Elite${newMaterialPrefix}.png`;
             epicImage.src = `Materials/${selectedMaterial}/Epic${newMaterialPrefix}.png`;
