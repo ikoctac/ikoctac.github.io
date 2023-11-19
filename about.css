@@ -1,5 +1,10 @@
 /* Reset some default styles for consistency */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -58,7 +63,6 @@ footer {
     align-items: center;
 }
 
-
 .footer-links {
     list-style: none;
     margin: 0;
@@ -98,8 +102,8 @@ footer p {
     font-size: 12px;
 }
 
-/* Privacy Policy Section */
-.privacy-policy {
+/* About Section */
+.about-section {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -110,21 +114,21 @@ footer p {
     max-height: none; /* Set maximum height as 80% of viewport height */
     overflow-y: auto; /* Add vertical scrollbar when content overflows */
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better contrast */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
     max-width: 800px;
 }
 
-.privacy-policy h2 {
+.about-section h2 {
     font-size: 24px; /* Adjust the font size */
     margin-bottom: 20px; /* Increase the margin to create more separation */
 }
 
-.privacy-policy p {
+.about-section p {
     font-size: 16px; /* Adjust the font size */
     line-height: 1.8; /* Increase the line height for more spacing between lines */
     margin-bottom: 20px; /* Increase the margin to create more separation */
+    /* Additional styles for paragraphs in the about section */
 }
 
-
-
-
+/* Other styles specific to your about section */
+/* ... */
